@@ -37,8 +37,8 @@
                         bindings = <
    &trans     &kp N1       &kp N2       &kp N3       &kp N4       &kp N5         &kp N6     &kp N7   &kp N8    &kp N9     &kp N0   &trans
    &trans     &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &kp ESC    &kp LEFT &kp UP    &kp RIGHT  &kp BSPC &trans
-   &trans     &kp TAB      &kp LCTRL    &trans       &trans       &kp CAPS     &kp SQT  &kp DOWN  &kp DQT    &kp RET  &trans
-                          	        &kp LGUI     &trans       &kp SPACE      &kp LSHFT  &trans   &kp RALT
+   &trans     &kp TAB      &kp LCTRL    &trans       &trans       &kp CAPS       &trans     &kp SQT  &kp DOWN  &kp DQT    &kp RET  &trans
+                          	           &kp LGUI     &trans       &kp SPACE       &kp LSHFT  &trans   &kp RALT
                         >;
                 };
 
@@ -53,7 +53,7 @@
   &trans  &kp EXCL   &kp AT     &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR &trans
   &trans  &kp GRAVE  &kp TILDE  &trans   &trans   &trans      &kp MINUS &kp EQUAL &kp LBKT        &kp RBKT &kp BSLH &trans
   &trans  &bt BT_CLR &kp LCTR   &trans   &trans   &trans      &kp UNDER &kp PLUS  &kp LBRC        &kp RBRC &kp PIPE &trans
-                    	        &kp LGUI &trans   &kp SPACE   &kp LSHFT   &trans   &kp RALT 
+                    	       &kp LGUI &trans   &kp SPACE      &kp LSHFT   &trans   &kp RALT 
                         >;
                 };
         };
