@@ -30,15 +30,15 @@
                 lower_layer {
                         label = "NUMBER";
 // -----------------------------------------------------------------------------------------
-// | CTRL  | ESC |  `  |  ~  |PG UP|HOME |        |BTCLR| '   |  UP | "   | BKSP|      |
-// | SHFT  | TAB |     |     |PG DW| END |        |     | LFT | DWN | RGT | ENT |      |
+// | TAB   | ESC |  ~  |     |     |HOME |        |BTCLR| '   |  UP | "   | BKSP|      |
+// | SHFT  | TAB |  `  |     |     | END |        |     | LFT | DWN | RGT | ENT |      |
 // | CTRL  | CAP |CTRL |     |     | DEL |        | BT1 | BT2 | BT3 | BT4 | BT5 |      |
 //                     | GUI |     | SPC |        | SHFT|     | ALT |
                         bindings = <
-  &kp LCTRL   &kp ESC     &kp GRAVE   &kp TILDE    &kp PG_UP    &kp HOME       &kp BT_CLR   &kp SQT      &kp UP       &kp DQT      &kp BSPC      &trans
-  &kp LSHFT   &kp TAB     &trans      &trans       &kp PG_DN    &kp END        &trans       &kp LEFT     &kp DOWN     &kp RIGHT    &kp RET       &trans
-  &kp LCTRL   &kp CAPS    &kp LCTRL   &trans       &trans       &kp DEL        &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4  &trans
-                          	          &kp LGUI     &trans       &kp SPACE      &kp RSHFT    &trans       &kp RALT
+  &kp TAB     &kp ESC     &kp TILDE   &trans       &trans        &kp HOME       &kp BT_CLR   &kp SQT      &kp UP       &kp DQT      &kp BSPC      &trans
+  &kp LSHFT   &kp TAB     &kp GRAVE   &trans       &trans        &kp END        &trans       &kp LEFT     &kp DOWN     &kp RIGHT    &kp RET       &trans
+  &kp LCTRL   &kp CAPS    &kp LCTRL   &trans       &trans        &kp DEL        &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4  &trans
+                          	          &kp LGUI     &trans        &kp SPACE      &kp RSHFT    &trans       &kp RALT
                       >;
                 };
 
@@ -46,14 +46,14 @@
                         label = "SYMBOL";
 // -----------------------------------------------------------------------------------------
 // | TAB  |  !  |  @  |  #  |  $  |  %  |        |  ^  |  &  |  *  |  (  |  )  |  BKSP |
-// | TAB  |  1  |  2  |  3  |  4  |  5  |        |  _  |  +  |  {  |  }  | "|" |  ESC  | 
-// | SHFT |  6  |  7  |  8  |  9  |  0  |        |  -  |  =  |  [  |  ]  |  \  |   '   |     
+// | SHFT |  1  |  2  |  3  |  4  |  5  |        |  _  |  +  |  {  |  }  | "|" |  ESC  | 
+// | CTRL |  6  |  7  |  8  |  9  |  0  |        |  -  |  =  |  [  |  ]  |  \  |   '   |     
 //                    | GUI |     | SPC |        | SHFT|     | ALT |
                         bindings = <
   &kp TAB    &kp EXCL   &kp AT     &kp HASH  &kp DLLR   &kp PRCNT       &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp BSPC
-  &kp TAB    &kp N1     &kp N2     &kp N3    &kp N4     &kp N5          &kp UNDER  &kp PLUS   &kp LBRC         &kp RBRC  &kp PIPE  &kp ESC 
-  &kp LSHFT  &kp N6     &kp N7     &kp N8    &kp N9     &kp N0          &kp MINUS  &kp EQUAL  &kp LBKT         &kp RBKT  &kp BSLH  &kp SQT
-                    	               &kp LGUI  &trans   &kp SPACE       &kp RSHFT  &trans     &kp RALT 
+  &kp LSHFT  &kp N1     &kp N2     &kp N3    &kp N4     &kp N5          &kp UNDER  &kp PLUS   &kp LBRC         &kp RBRC  &kp PIPE  &kp ESC 
+  &kp LCTRL  &kp N6     &kp N7     &kp N8    &kp N9     &kp N0          &kp MINUS  &kp EQUAL  &kp LBKT         &kp RBKT  &kp BSLH  &kp SQT
+                    	             &kp LGUI  &trans     &kp SPACE       &kp RSHFT  &trans     &kp RALT 
                         >;
                 };
         };
