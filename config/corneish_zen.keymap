@@ -21,39 +21,39 @@
 // | SHFT  |  Z  |  X  |  C  |  V  |  B  |        |  N  |  M   |  ,  |  .  |  /  |   ESC |
 //                     | GUI | LWR | SPC |        | SHFT| RSE  | ALT |
                         bindings = <
-  &kp TAB   &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
-  &kp LCTRL &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
-  &kp LSHFT &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp ESC
-              &kp LGUI &mo 1 &kp SPACE   &kp LSHFT &mo 2 &kp RALT
+  &kp TAB   &kp Q &kp W &kp E &kp R &kp T        &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
+  &kp LCTRL &kp A &kp S &kp D &kp F &kp G        &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
+  &kp LSHFT &kp Z &kp X &kp C &kp V &kp B        &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp ESC
+                  &kp LGUI &mo 1    &kp SPACE    &kp RSHFT    &mo 2     &kp RALT
                         >;
                 };
                 lower_layer {
                         label = "NUMBER";
 // -----------------------------------------------------------------------------------------
-// | TAB   |  1  |  2  |  3  |  4  |  5  |        |  6  |  7  |  8  |  9  |  0  | BKSP |
-// | CTRL  | BT1 | BT2 | BT3 | BT4 | BT5 |        | ESC | LFT |  UP | RGT | BKSP|      |
-// | SHFT  | TAB | CTRL|     |     | CAP |        |     |  '  | DWN |  "  | ENT |      |
+// | CTRL  | ESC |  `  |  ~  |PG UP|HOME |        |BTCLR| '   |  UP | "   | BKSP|      |
+// | SHFT  | TAB |     |     |PG DW| END |        |     | LFT | DWN | RGT | ENT |      |
+// | CTRL  | CAP |CTRL |     |     | DEL |        | BT1 | BT2 | BT3 | BT4 | BT5 |      |
 //                     | GUI |     | SPC |        | SHFT|     | ALT |
                         bindings = <
-   &kp TAB       &kp N1       &kp N2       &kp N3       &kp N4       &kp N5         &kp N6     &kp N7   &kp N8    &kp N9     &kp N0    &kp BSPC
-   &kp LCTRL     &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &kp ESC    &kp LEFT &kp UP    &kp RIGHT  &kp BSPC  &trans
-   &kp LSHFT     &kp TAB      &kp LCTRL    &trans       &trans       &kp CAPS       &trans     &kp SQT  &kp DOWN  &kp DQT    &kp RET   &trans
-                          	               &kp LGUI     &trans       &kp SPACE      &kp LSHFT  &trans   &kp RALT
+  &kp LCTRL   &kp ESC     &kp GRAVE   &kp TILDE    &bt PG_UP    &bt HOME       &bt BT_CLR   &kp SQT      &kp UP       &kp DQT      &kp BSPC      &trans
+  &kp LSHFT   &kp TAB     &trans      &trans       &bt PG_DN    &bt END        &trans       &kp LEFT     &kp DOWN     &kp RIGHT    &kp RET       &trans
+  &kp LCTRL   &kp CAPS    &kp LCTRL   &trans       &trans       &bt DEL        &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4  &trans
+                          	          &kp LGUI     &trans       &kp SPACE      &kp RSHFT    &trans       &kp RALT
                         >;
                 };
 
                 raise_layer {
                         label = "SYMBOL";
 // -----------------------------------------------------------------------------------------
-// |  TAB  |  !  |  @  |  #  |  $  |  %  |        |  ^  |  &  |  *  |  (  |  )  |  BKSP |
-// | CTRL  |  `  |  ~  |     |     |     |        |  -  |  =  |  [  |  ]  |  \  |   '   |
-// | SHFT  |BTCLR|CTRL |     |     |     |        |  _  |  +  |  {  |  }  | "|" |  ESC  |
-//                     | GUI |     | SPC |        | SHFT|     | ALT |
+// | TAB  |  !  |  @  |  #  |  $  |  %  |        |  ^  |  &  |  *  |  (  |  )  |  BKSP |
+// | TAB  |  1  |  2  |  3  |  4  |  5  |        |  _  |  +  |  {  |  }  | "|" |  ESC  | 
+// | SHFT |  6  |  7  |  8  |  9  |  0  |        |  -  |  =  |  [  |  ]  |  \  |   '   |     
+//                    | GUI |     | SPC |        | SHFT|     | ALT |
                         bindings = <
-  &kp TAB    &kp EXCL   &kp AT     &kp HASH &kp DLLR &kp PRCNT   &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp BSPC
-  &kp LCTRL  &kp GRAVE  &kp TILDE  &trans   &trans   &trans      &kp MINUS  &kp EQUAL  &kp LBKT         &kp RBKT  &kp BSLH  &kp SQT
-  &kp LSHFT  &bt BT_CLR &kp LCTR   &trans   &trans   &trans      &kp UNDER  &kp PLUS   &kp LBRC         &kp RBRC  &kp PIPE  &kp ESC
-                    	             &kp LGUI &trans   &kp SPACE   &kp LSHFT   &trans   &kp RALT 
+  &kp TAB    &kp EXCL   &kp AT     &kp HASH  &kp DLLR   &kp PRCNT       &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp BSPC
+  &kp TAB    &kp N1     &kp N2     &kp N3    &kp N4     &kp N5          &kp UNDER  &kp PLUS   &kp LBRC         &kp RBRC  &kp PIPE  &kp ESC 
+  &kp LSHFT  &kp N6     &kp N7     &kp N8    &kp N9     &kp N0          &kp MINUS  &kp EQUAL  &kp LBKT         &kp RBKT  &kp BSLH  &kp SQT
+                    	               &kp LGUI  &trans   &kp SPACE       &kp RSHFT  &trans     &kp RALT 
                         >;
                 };
         };
