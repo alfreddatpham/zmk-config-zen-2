@@ -16,44 +16,44 @@
                 default_layer {
                         label = "QWERTY";
 // -----------------------------------------------------------------------------------------
-// |       |  Q  |  W  |  E  |  R  |  T  |        |  Y  |  U   |  I  |  O  |  P  |  BKSP |
-// |       |  A  |  S  |  D  |  F  |  G  |        |  H  |  J   |  K  |  L  |  ;  |   '   |
-// |       |  Z  |  X  |  C  |  V  |  B  |        |  N  |  M   |  ,  |  .  |  /  |   ESC |
+// |       |  Q  |  W  |  E  |  R  |  T  |        |  Y  |  U   |  I  |  O  |  P  |  &trans |
+// |       |  A  |  S  |  D  |  F  |  G  |        |  H  |  J   |  K  |  L  |  ;  |  &trans |
+// |       |  Z  |  X  |  C  |  V  |  B  |        |  N  |  M   |  ,  |  .  | CTRL|  &trans |
 //                     | GUI | LWR | SPC |        | SHFT| RSE  | ALT |
                         bindings = <
-  &trans    &kp Q &kp W &kp E &kp R &kp T        &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
-  &trans    &kp A &kp S &kp D &kp F &kp G        &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
-  &trans    &kp Z &kp X &kp C &kp V &kp B        &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp ESC
+  &trans    &kp Q &kp W &kp E &kp R &kp T        &kp Y &kp U  &kp I     &kp O   &kp P     &trans
+  &trans    &kp A &kp S &kp D &kp F &kp G        &kp H &kp J  &kp K     &kp L   &kp SEMI  &trans 
+  &trans    &kp Z &kp X &kp C &kp V &kp B        &kp N &kp M  &kp COMMA &kp DOT &kp RCTRL &trans 
                   &kp LGUI    &mo 1 &kp SPACE    &kp RSHFT    &mo 2     &kp RALT
                          >;
                 };
                 lower_layer {
                         label = "NUMBER";
 // -----------------------------------------------------------------------------------------
-// |       | ESC |  ~  |     |     |HOME |        |BTCLR| '   |  UP | "   | BKSP|      |
-// |       | TAB |  `  |     |     | END |        |     | LFT | DWN | RGT | ENT |      |
-// |       | CAP |CTRL |     |     | DEL |        | BT1 | BT2 | BT3 | BT4 | BT5 |      |
-//                     | GUI |     | SPC |        | SHFT|     | ALT |
+// |       |  !  |  @  |  #  |  $  |  %   |        |  &  |  *  |  (  |  )  | BKSP|      |
+// |       | TAB | LFT | UP  | RGT |  ^   |        | ENT |  ~  |  '  |  "  |  :  |      |
+// |       | CAP | V_UP| DWN |V_DN |V_MUTE|        |  /  |  `  |  <  |  >  |  ?  |      |
+//                     | GUI |     | SPC  |        | SHFT|     | ALT |
                         bindings = <
-  &trans      &kp ESC     &kp TILDE   &trans       &trans        &kp HOME       &bt BT_CLR   &kp SQT      &kp UP       &kp DQT      &kp BSPC      &trans
-  &trans      &kp TAB     &kp GRAVE   &trans       &trans        &kp END        &trans       &kp LEFT     &kp DOWN     &kp RIGHT    &kp RET       &trans
-  &trans      &kp CAPS    &kp LCTRL   &trans       &trans        &kp DEL        &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4  &trans
-                          	          &kp LGUI     &trans        &kp SPACE      &kp RSHFT    &trans       &kp RALT
+  &trans      &kp EXCL    &kp AT       &kp HASH    &kp DLLR      &kp PRCNT     &kp AMPS     &kp KP_MULTIPLY    &kp LPAR   &kp RPAR    &kp BSPC      &trans
+  &trans      &kp TAB     &kp LEFT     &kp UP      &kp RIGHT     &kp CARET     &kp RET      &kp TILDE          &kp SQT    &kp DQT     &kp COLON     &trans
+  &trans      &kp CAPS    &kp C_VOL_UP &kp DOWN    &kp C_VOL_DN  &kp C_MUTE    &kp FSLH     &kp GRAVE          &kp LT     &kp GT      &kp QMARK     &trans
+                          	           &kp LGUI    &trans        &kp SPACE     &kp RSHFT    &trans             &kp RALT
                       >;
                 };
 
                 raise_layer {
                         label = "SYMBOL";
 // -----------------------------------------------------------------------------------------
-// |      |  !  |  @  |  #  |  $  |  %  |        |  ^  |  &  |  *  |  (  |  )  |  BKSP |
-// |      |  1  |  2  |  3  |  4  |  5  |        |  _  |  +  |  {  |  }  | "|" |  ESC  | 
-// |      |  6  |  7  |  8  |  9  |  0  |        |  -  |  =  |  [  |  ]  |  \  |   '   |     
-//                    | GUI |     | SPC |        | SHFT|     | ALT |
+// |      | ESC | HOME| END |     |BTCLR|        | BT1 | BT2 | BT3 | BT4 | BT5 |     |
+// |      |  1  |  2  |  3  |  4  |  5  |        |  _  |  +  |  {  |  }  | "|" |     | 
+// |      |  6  |  7  |  8  |  9  |  0  |        |  -  |  =  |  [  |  ]  |  \  |     |     
+//                    | GUI |     | SPC |        |SHFT |     | ALT |
                         bindings = <
-  &trans     &kp EXCL   &kp AT     &kp HASH  &kp DLLR   &kp PRCNT       &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp BSPC
-  &trans     &kp N1     &kp N2     &kp N3    &kp N4     &kp N5          &kp UNDER  &kp PLUS   &kp LBRC         &kp RBRC  &kp PIPE  &kp ESC 
-  &trans     &kp N6     &kp N7     &kp N8    &kp N9     &kp N0          &kp MINUS  &kp EQUAL  &kp LBKT         &kp RBKT  &kp BSLH  &kp SQT
-                    	             &kp LGUI  &trans     &kp SPACE       &kp RSHFT  &trans     &kp RALT 
+  &trans     &kp ESC    &kp HOME   &kp END   &trans     &bt BT_CLR      &bt BT_SEL 0   &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4  &trans
+  &trans     &kp N1     &kp N2     &kp N3    &kp N4     &kp N5          &kp UNDER      &kp PLUS     &kp LBRC     &kp RBRC     &kp PIPE      &trans 
+  &trans     &kp N6     &kp N7     &kp N8    &kp N9     &kp N0          &kp MINUS      &kp EQUAL    &kp LBKT     &kp RBKT     &kp BSLH      &trans
+                    	             &kp LGUI  &trans     &kp SPACE       &kp RSHFT      &trans       &kp RALT 
                         >;
                 };
         };
