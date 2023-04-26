@@ -25,7 +25,7 @@
   &kp LCTRL &kp A &kp S &kp D &kp F &kp G        &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
   &kp LSHFT &kp Z &kp X &kp C &kp V &kp B        &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp ESC
                   &kp LGUI &mo 1    &kp SPACE    &kp RSHFT    &mo 2     &kp RALT
-                        >;
+                         >;
                 };
                 lower_layer {
                         label = "NUMBER";
@@ -35,11 +35,11 @@
 // | CTRL  | CAP |CTRL |     |     | DEL |        | BT1 | BT2 | BT3 | BT4 | BT5 |      |
 //                     | GUI |     | SPC |        | SHFT|     | ALT |
                         bindings = <
-  &kp LCTRL   &kp ESC     &kp GRAVE   &kp TILDE    &bt PG_UP    &kp HOME       &kp BT_CLR   &kp SQT      &kp UP       &kp DQT      &kp BSPC      &trans
-  &kp LSHFT   &kp TAB     &trans      &trans       &bt PG_DN    &kp END        &trans       &kp LEFT     &kp DOWN     &kp RIGHT    &kp RET       &trans
+  &kp LCTRL   &kp ESC     &kp GRAVE   &kp TILDE    &kp PG_UP    &kp HOME       &kp BT_CLR   &kp SQT      &kp UP       &kp DQT      &kp BSPC      &trans
+  &kp LSHFT   &kp TAB     &trans      &trans       &kp PG_DN    &kp END        &trans       &kp LEFT     &kp DOWN     &kp RIGHT    &kp RET       &trans
   &kp LCTRL   &kp CAPS    &kp LCTRL   &trans       &trans       &kp DEL        &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4  &trans
                           	          &kp LGUI     &trans       &kp SPACE      &kp RSHFT    &trans       &kp RALT
-                        >;
+                      >;
                 };
 
                 raise_layer {
