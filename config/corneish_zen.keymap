@@ -32,12 +32,12 @@
 // -----------------------------------------------------------------------------------------
 // |       |  !  |  @  |  #  |  $  |  %   |        |  &  |  *  |  (  |  )  | BKSP|      |
 // |       | TAB | LFT | UP  | RGT |  ^   |        |  ~  | "|" |  '  |  "  |  :  |      |
-// |       | CAP | V_DN| DWN |V_UP |V_MUTE|        |  `  |  \  |  <  |  >  |  ?  |      |
+// |       | ESC | V_DN| DWN |V_UP |V_MUTE|        |  `  |  \  |  <  |  >  |  ?  |      |
 //                     | GUI |     | SHFT |        |     | SPC | ALT |
                         bindings = <
   &trans      &kp EXCL    &kp AT       &kp HASH    &kp DLLR      &kp PRCNT     &kp AMPS     &kp KP_MULTIPLY    &kp LPAR   &kp RPAR    &kp BSPC      &trans
   &trans      &kp TAB     &kp LEFT     &kp UP      &kp RIGHT     &kp CARET     &kp TILDE    &kp PIPE           &kp SQT    &kp DQT     &kp COLON     &trans
-  &trans      &kp CAPS    &kp C_VOL_DN &kp DOWN    &kp C_VOL_UP  &kp C_MUTE    &kp GRAVE    &kp BSLH           &kp LT     &kp GT      &kp QMARK     &trans
+  &trans      &kp ESC     &kp C_VOL_DN &kp DOWN    &kp C_VOL_UP  &kp C_MUTE    &kp GRAVE    &kp BSLH           &kp LT     &kp GT      &kp QMARK     &trans
                           	           &kp LGUI    &trans        &kp LSHFT     &trans       &kp SPACE          &kp RALT
                       >;
                 };
@@ -45,12 +45,12 @@
                 raise_layer {
                         label = "SYMBOL";
 // -----------------------------------------------------------------------------------------
-// |      | ESC | HOME| END |     |BTCLR|        | BT1 | BT2 | BT3 | BT4 | BT5 |     |
+// |      | CAP | HOME| END |     |BTCLR|        | BT1 | BT2 | BT3 | BT4 | BT5 |     |
 // |      |  1  |  2  |  3  |  4  |  5  |        |  _  |  +  |  {  |  }  | ENT |     | 
 // |      |  6  |  7  |  8  |  9  |  0  |        |  -  |  =  |  [  |  ]  |  /  |     |     
 //                    | GUI |     | SHFT|        |     | SPC | ALT |
                         bindings = <
-  &trans     &kp ESC    &kp HOME   &kp END   &trans     &bt BT_CLR      &bt BT_SEL 0   &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4  &trans
+  &trans     &kp CAPS   &kp HOME   &kp END   &trans     &bt BT_CLR      &bt BT_SEL 0   &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4  &trans
   &trans     &kp N1     &kp N2     &kp N3    &kp N4     &kp N5          &kp UNDER      &kp PLUS     &kp LBRC     &kp RBRC     &kp RET       &trans 
   &trans     &kp N6     &kp N7     &kp N8    &kp N9     &kp N0          &kp MINUS      &kp EQUAL    &kp LBKT     &kp RBKT     &kp FSLH      &trans
                     	             &kp LGUI  &trans     &kp LSHFT       &trans         &kp SPACE    &kp RALT 
