@@ -45,15 +45,15 @@
                 raise_layer {
                         label = "SYMBOL";
 // -----------------------------------------------------------------------------------------
-// |      |   TAB |    |  {  |  }  | BT1 |           |  _   |  +  |  UP |  -   | = |     |
-// |      |   CAP |    |  [  |  ]  | BT2 |           | ESC  | LFT | DWN | RGT  | ; |     | 
-// |      | BTCLR |CTRL| V_UP| V_DN| BT3 |           |      | HOME| END |V_MUTE| / |     |     
-//                     | GUI | SHFT|     |           |      | SPC | ALT |
+// |      |   TAB |V_UP |  {  |  }  | BT1 |           |  _   |  +  |  UP |  -   | = |     |
+// |      |   CAP |V_DN |  [  |  ]  | BT2 |           | ESC  | LFT | DWN | RGT  | ; |     | 
+// |      |       |CTRL |     |     |BTCLR|           |V_MUTE| HOME| END |      | / |     |     
+//                      | GUI | SHFT|     |           |      | SPC | ALT |
                         bindings = <
-  &trans &kp TAB    &trans    &kp LBRC     &kp RBRC     &bt BT_SEL 0  &kp UNDER &kp PLUS  &kp UP   &kp MINUS  &kp EQUAL &trans
-  &trans &kp CAPS   &trans    &kp LBKT     &kp RBKT     &bt BT_SEL 1  &kp ESC   &kp LEFT  &kp DOWN &kp RIGHT  &kp SEMI  &trans 
-  &trans &bt BT_CLR &kp LCTRL &kp C_VOL_UP &kp C_VOL_DN &bt BT_SEL 2  &trans    &kp HOME  &kp END  &kp C_MUTE &kp FSLH  &trans
-                    	         &kp LGUI    &kp LSHFT    &trans        &trans    &kp SPACE &kp RALT 
+  &trans &kp TAB    &kp C_VOL_UP &kp LBRC  &kp RBRC  &bt BT_SEL 0  &kp UNDER   &kp PLUS  &kp UP   &kp MINUS  &kp EQUAL &trans
+  &trans &kp CAPS   &kp C_VOL_DN &kp LBKT  &kp RBKT  &bt BT_SEL 1  &kp ESC     &kp LEFT  &kp DOWN &kp RIGHT  &kp SEMI  &trans 
+  &trans &trans     &kp LCTRL    &trans    &trans    &bt BT_CLR    &kp C_MUTE  &kp HOME  &kp END  &trans     &kp FSLH  &trans
+                    	           &kp LGUI  &kp LSHFT &trans        &trans      &kp SPACE &kp RALT 
                         >;
                 };
         };
