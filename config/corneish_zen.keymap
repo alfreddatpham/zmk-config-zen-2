@@ -17,13 +17,13 @@
                         label = "QWERTY";
 // -----------------------------------------------------------------------------------------
 // |       |  Q  |  W  |  E  |  R  |  T  |        |  Y  |  U   |  I  |  O  |  P   |  &trans |
-// |       |  A  |  S  |  D  |  F  |  G  |        |  H  |  J   |  K  |  L  |  ENT |  &trans |
-// |       |  Z  |  X  |  C  |  V  |  B  |        |  N  |  M   |  ,  |  .  | BKSP |  &trans |
+// |       |  A  |  S  |  D  |  F  |  G  |        |  H  |  J   |  K  |  L  |  BKSP|  &trans |
+// |       |  Z  |  X  |  C  |  V  |  B  |        |  N  |  M   |  ,  |  .  | ENT  |  &trans |
 //                     | GUI | LWR |  SHFT|       | SPC |  RSE | ALT |
                         bindings = <
   &trans    &kp Q &kp W &kp E &kp R     &kp T        &kp Y &kp U  &kp I     &kp O   &kp P     &trans
-  &trans    &kp A &kp S &kp D &kp F     &kp G        &kp H &kp J  &kp K     &kp L   &kp RET   &trans 
-  &trans    &kp Z &kp X &kp C &kp V     &kp B        &kp N &kp M  &kp COMMA &kp DOT &kp BSPC  &trans 
+  &trans    &kp A &kp S &kp D &kp F     &kp G        &kp H &kp J  &kp K     &kp L   &kp BSPC   &trans 
+  &trans    &kp Z &kp X &kp C &kp V     &kp B        &kp N &kp M  &kp COMMA &kp DOT &kp RET  &trans 
                   &kp LGUI    &mo 1     &kp LSHFT    &kp SPACE    &mo 2     &kp RALT
                          >;
                 };
