@@ -52,7 +52,7 @@
                         bindings = <
   &trans &kp TAB    &trans    &kp LBRC     &kp RBRC     &bt BT_SEL 0  &kp UNDER &kp PLUS  &kp UP   &kp MINUS  &kp EQUAL &trans
   &trans &kp CAPS   &trans    &kp LBKT     &kp RBKT     &bt BT_SEL 1  &kp ESC   &kp LEFT  &kp DOWN &kp RIGHT  &kp SEMI  &trans 
-  &trans &bt BT_CLR &kp LCTRL &kp C_VOL_UP &kp C_VOL_DN &bt BT_SEL 2  &trans    &kb HOME  &kb END  &kp C_MUTE &kp FSLH  &trans
+  &trans &bt BT_CLR &kp LCTRL &kp C_VOL_UP &kp C_VOL_DN &bt BT_SEL 2  &trans    &kp HOME  &kp END  &kp C_MUTE &kp FSLH  &trans
                     	         &kp LGUI    &kp LSHFT    &trans        &trans    &kp SPACE &kp RALT 
                         >;
                 };
