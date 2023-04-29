@@ -38,7 +38,7 @@
   &trans  &kp EXCL &kp AT &kp HASH &kp DLLR  &kp PRCNT &kp CARET  &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR  &trans
   &trans  &kp N1   &kp N2 &kp N3   &kp N4    &kp N5    &kp TILDE  &kp PIPE  &kp SQT         &kp DQT  &kp COLON &trans
   &trans  &kp N6   &kp N7 &kp N8   &kp N9    &kp N0    &kp GRAVE  &kp BSLH  &kp LT          &kp GT   &kp QMARK &trans
-                              &kp LGUI &kp LSHFT &trans    &trans     &kp SPACE &kp RALT
+                          &kp LGUI &kp LSHFT &trans    &trans     &kp SPACE &kp RALT
                       >;
                 };
 
@@ -50,10 +50,10 @@
 // |      | BTCLR |CTRL| V_UP| V_DN| BT3 |           |      | HOME| END |V_MUTE| / |     |     
 //                     | GUI | SHFT|     |           |      | SPC | ALT |
                         bindings = <
-  &trans &kp TAB    &trans    &kp LBRC     &kp RBRC     &bt BT_SEL 0  &kp UNDER &kp PLUS &kp UP   &kp MINUS  &kp EQUAL &trans
-  &trans &kp CAPS   &trans    &kp LBKT     &kp RBKT     &bt BT_SEL 1  &kp ESC   &kp LEFT &kp DOWN &kp RIGHT  &kp SEMI  &trans 
-  &trans &bt BT_CLR &kp LCTRL &kp C_VOL_UP &kp C_VOL_DN &bt BT_SEL 2  &trans    &kb HOME &kb END  &kp C_MUTE &kp FSLH  &trans
-                    	         &kp LGUI     &kp LSHFT    &trans        &trans    &kp SPACE &kp RALT 
+  &trans &kp TAB    &trans    &kp LBRC     &kp RBRC     &bt BT_SEL 0  &kp UNDER &kp PLUS  &kp UP   &kp MINUS  &kp EQUAL &trans
+  &trans &kp CAPS   &trans    &kp LBKT     &kp RBKT     &bt BT_SEL 1  &kp ESC   &kp LEFT  &kp DOWN &kp RIGHT  &kp SEMI  &trans 
+  &trans &bt BT_CLR &kp LCTRL &kp C_VOL_UP &kp C_VOL_DN &bt BT_SEL 2  &trans    &kb HOME  &kb END  &kp C_MUTE &kp FSLH  &trans
+                    	         &kp LGUI    &kp LSHFT    &trans        &trans    &kp SPACE &kp RALT 
                         >;
                 };
         };
