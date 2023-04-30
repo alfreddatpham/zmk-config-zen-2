@@ -45,14 +45,14 @@
                 raise_layer {
                         label = "SYMBOL";
 // -----------------------------------------------------------------------------------------
-// |      |   TAB |V_UP |  {  |  }  | BT1 |           |  _   |  +  |  UP |  -   | = |     |
-// |      |   CAP |V_DN |  [  |  ]  | BT2 |           | ESC  | LFT | DWN | RGT  | ; |     | 
-// |      |       |CTRL |     |     |BTCLR|           |V_MUTE| HOME| END |      | / |     |     
+// |      |   TAB |V_UP |  {  |  }  | BT1 |           |  _   |  +  |  UP |  -     | = |     |
+// |      |   CAP |V_DN |  [  |  ]  | BT2 |           | ESC  | LFT | DWN | RGT    | ; |     | 
+// |      |       |CTRL |BR_UP|BR_DN|BTCLR|           |V_MUTE| HOME| END | AC_BCK | / |     |     
 //                      | GUI | SHFT|     |           |      | SPC | ALT |
                         bindings = <
-  &trans &kp TAB    &kp C_VOL_UP &kp LBRC  &kp RBRC  &bt BT_SEL 0  &kp UNDER   &kp PLUS  &kp UP   &kp MINUS  &kp EQUAL &trans
-  &trans &kp CAPS   &kp C_VOL_DN &kp LBKT  &kp RBKT  &bt BT_SEL 1  &kp ESC     &kp LEFT  &kp DOWN &kp RIGHT  &kp SEMI  &trans 
-  &trans &trans     &kp LCTRL    &trans    &trans    &bt BT_CLR    &kp C_MUTE  &kp HOME  &kp END  &trans     &kp FSLH  &trans
+  &trans &kp TAB    &kp C_VOL_UP &kp LBRC      &kp RBRC     &bt BT_SEL 0  &kp UNDER   &kp PLUS  &kp UP   &kp MINUS     &kp EQUAL &trans
+  &trans &kp CAPS   &kp C_VOL_DN &kp LBKT      &kp RBKT     &bt BT_SEL 1  &kp ESC     &kp LEFT  &kp DOWN &kp RIGHT     &kp SEMI  &trans 
+  &trans &trans     &kp LCTRL    &kp C_BRI_UP  &kp C_BRI_DN &bt BT_CLR    &kp C_MUTE  &kp HOME  &kp END  &kp C_AC_BACK &kp FSLH  &trans
                     	           &kp LGUI  &kp LSHFT &trans        &trans      &kp SPACE &kp RALT 
                         >;
                 };
