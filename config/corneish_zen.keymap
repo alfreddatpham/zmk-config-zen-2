@@ -19,41 +19,42 @@
 // |       |  Q  |  W  |  E  |  R  |  T  |        |  Y  |  U   |  I  |  O  |  P   |  &trans |
 // |       |  A  |  S  |  D  |  F  |  G  |        |  H  |  J   |  K  |  L  | BKSP |  &trans |
 // |       |  Z  |  X  |  C  |  V  |  B  |        |  N  |  M   |  ,  |  .  | ENT  |  &trans |
-//                     | GUI | SHFT| LWR |        | RSE |  SPC | ALT |
+//                     | GUI | SPC | LWR |        | RSE |SHIFT | ALT |
                         bindings = <
   &trans    &kp Q &kp W &kp E &kp R     &kp T        &kp Y &kp U  &kp I     &kp O   &kp P     &trans
-  &trans    &kp A &kp S &kp D &kp F     &kp G        &kp H &kp J  &kp K     &kp L   &kp BSPC   &trans 
-  &trans    &kp Z &kp X &kp C &kp V     &kp B        &kp N &kp M  &kp COMMA &kp DOT &kp RET  &trans 
-                  &kp LGUI  &kp LSHFT   &mo 1        &mo 2 &kp SPACE        &kp RALT
+  &trans    &kp A &kp S &kp D &kp F     &kp G        &kp H &kp J  &kp K     &kp L   &kp BSPC  &trans 
+  &trans    &kp Z &kp X &kp C &kp V     &kp B        &kp N &kp M  &kp COMMA &kp DOT &kp RET   &trans 
+                  &kp LGUI  &kp SPACE   &mo 1        &mo 2        &kp RSHFT &kp RALT
                          >;
                 };
                 lower_layer {
                         label = "NUMBER";
 // -----------------------------------------------------------------------------------------
-// |       |  !  |  @  |  #  |  $  |  %  |        |  ^  |  &  |  *  |  (  |  )  |      | 
-// |       |  1  |  2  |  3  |  4  |  5  |        |  ~  | "|" |  '  |  "  |  :  |      |
-// |       |  6  |  7  |  8  |  9  |  0  |        |  `  |  \  |  <  |  >  |  ?  |      |
-//                     | GUI | SHFT|     |        |     | SPC | ALT |
+// |       |  1  |  2  |  3  |  4  |  5  |        |  6  |  7  |  8  |  9  |  0  |      | 
+// |       | ESC |     |     |     |     |        |  `  |  [  |  ]  |  '  |  \  |      |
+// |       |CTRL | TAB |     |     |     |        |     |     |     |     |  /  |      |
+//                     | GUI | SPC |     |        |     |SHIFT| ALT |
                         bindings = <
-  &trans  &kp EXCL &kp AT &kp HASH &kp DLLR  &kp PRCNT &kp CARET  &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR  &trans
-  &trans  &kp N1   &kp N2 &kp N3   &kp N4    &kp N5    &kp TILDE  &kp PIPE  &kp SQT         &kp DQT  &kp COLON &trans
-  &trans  &kp N6   &kp N7 &kp N8   &kp N9    &kp N0    &kp GRAVE  &kp BSLH  &kp LT          &kp GT   &kp QMARK &trans
-                          &kp LGUI &kp LSHFT &trans    &trans     &kp SPACE &kp RALT
+  &trans  &kp N1    &kp N2 &kp N3   &kp N4    &kp N5    &kp N6     &kp N7    &kp N8          &kp N9   &kp N0  &trans
+  &trans  &kp ESC   &trans &trans   &trans    &trans    &kp GRAVE  &kp LBKT  &kp RBKT        &kp SQT  &kp BSLH &trans
+  &trans  &kp LCTRL &kp TAB &trans   &trans    &trans    &trans     &trans    &trans          &trans   &kp FSLH &trans
+                         &kp LGUI  &kp SPACE   &mo 1        &mo 2        &kp RSHFT &kp RALT
                       >;
                 };
 
                 raise_layer {
-                        label = "SYMBOL";
+                        label = "COMMAND";
 // -----------------------------------------------------------------------------------------
-// |      |   TAB |V_UP |  {  |  }  | BT1 |           |  _   |  +  |  UP |  -  | = |     |
-// |      |   CAP |V_DN |  [  |  ]  | BT2 |           | ESC  | LFT | DWN | RGT | ; |     | 
-// |      |   CTRL|BR_DN|BR_UP|     |BTCLR|           |V_MUTE| HOME| END | DEL | / |     |     
-//                      | GUI | SHFT|     |           |      | SPC | ALT |
+// |      |     |V_MUTE| V_DN| V_UP| BT1 |        |BR_DN |BR_UP|  UP |  -  | = |     |
+// |      | CAP |      |     |     | BT2 |        |      | LFT | DWN | RGT | ; |     | 
+// |      |     |      |     |     |BTCLR|        |      | HOME| END | DEL |   |     |     
+//                     | GUI | SPC |     |        |      |SHIFT| ALT |
                         bindings = <
-  &trans &kp TAB    &kp C_VOL_UP &kp LBRC      &kp RBRC     &bt BT_SEL 0  &kp UNDER   &kp PLUS  &kp UP   &kp MINUS  &kp EQUAL &trans
-  &trans &kp CAPS   &kp C_VOL_DN &kp LBKT      &kp RBKT     &bt BT_SEL 1  &kp ESC     &kp LEFT  &kp DOWN &kp RIGHT  &kp SEMI  &trans 
-  &trans &kp LCTRL  &kp C_BRI_DN &kp C_BRI_UP  &trans       &bt BT_CLR    &kp C_MUTE  &kp HOME  &kp END  &kp DEL    &kp FSLH  &trans
-                    	     &kp LGUI  &kp LSHFT &trans       &trans        &kp SPACE   &kp RALT 
+  &trans &trans    &kp C_MUTE &kp C_VOL_DN  &kp C_VOL_UP  &bt BT_SEL 0  &kp C_BRI_DN &kp C_BRI_UP &kp UP   &kp MINUS  &kp EQUAL &trans
+  &trans &kp CAPS  &trans     &trans        &trans        &bt BT_SEL 1  &trans       &kp LEFT     &kp DOWN &kp RIGHT  &kp SEMI  &trans 
+  &trans &tran     &trans     &trans        &trans        &bt BT_CLR    &trans      &kp HOME  &kp END  &kp DEL    &trans  &trans
+                    	     &kp LGUI  &kp SPACE   &mo 1        &mo 2        &kp RSHFT &kp RALT
+
                         >;
                 };
         };
