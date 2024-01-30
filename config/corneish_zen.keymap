@@ -19,12 +19,12 @@
 // |       |  Q  |  W  |  E  |  R  |  T  |        |  Y  |  U   |  I  |  O  |  P   |  &trans |
 // |       |  A  |  S  |  D  |  F  |  G  |        |  H  |  J   |  K  |  L  | BKSP |  &trans |
 // |       |  Z  |  X  |  C  |  V  |  B  |        |  N  |  M   |  ,  |  .  | ENT  |  &trans |
-//                     | GUI |SHIFT| LWR |        | RSE |SPC | ALT |
+//                     | GUI |SHIFT| LWR |        | RSE |  SPC |CTRL |
                         bindings = <
   &trans    &kp Q &kp W &kp E &kp R     &kp T        &kp Y &kp U  &kp I     &kp O   &kp P     &trans
   &trans    &kp A &kp S &kp D &kp F     &kp G        &kp H &kp J  &kp K     &kp L   &kp BSPC  &trans 
   &trans    &kp Z &kp X &kp C &kp V     &kp B        &kp N &kp M  &kp COMMA &kp DOT &kp RET   &trans 
-                  &kp LGUI    &kp LSHFT &mo 1        &mo 2        &kp SPACE &kp RALT
+                  &kp LGUI    &kp LSHFT &mo 1        &mo 2        &kp SPACE &kp RCTRL
                          >;
                 };
                 lower_layer {
@@ -32,13 +32,13 @@
 // -----------------------------------------------------------------------------------------
 // |       |  1  |  2  |  3  |  4  |  5  |        |  6  |  7  |  8  |  9  |  0  |      | 
 // |       | TAB |     |     |  $  |  %  |        |  `  |  [  |  ]  |  '  |  \  |      |
-// |       | ESC | CTRL|BTCLR| SPC |BKSP |        |SHIFT|     |     |     |  /  |      |
-//                     | GUI |SHIFT|     |        |     | SPC | ALT |
+// |       | ESC | ALT |BTCLR| SPC |BKSP |        |SHIFT|     |     |     |  /  |      |
+//                     | GUI |SHIFT|     |        |     | SPC | CTRL |
                         bindings = <
   &trans  &kp N1    &kp N2    &kp N3     &kp N4    &kp N5    &kp N6     &kp N7     &kp N8     &kp N9   &kp N0    &trans
   &trans  &kp TAB   &trans    &trans     &kp DLLR  &kp PRCNT &kp GRAVE  &kp LBKT   &kp RBKT   &kp SQT  &kp BSLH  &trans
-  &trans  &kp ESC   &kp LCTRL &bt BT_CLR &kp SPACE &kp BSPC  &kp RSHFT  &trans     &trans     &trans   &kp FSLH  &trans
-                              &kp LGUI &kp LSHFT &mo 1     &mo 2      &kp SPACE  &kp RALT
+  &trans  &kp ESC   &kp LALT &bt BT_CLR &kp SPACE &kp BSPC  &kp RSHFT  &trans     &trans     &trans   &kp FSLH  &trans
+                              &kp LGUI &kp LSHFT &mo 1     &mo 2      &kp SPACE  &kp RCTRL
                       >;
                 };
 
@@ -48,12 +48,12 @@
 // |      |     |V_MUTE| V_DN| V_UP| BT1 |        |BR_DN |BR_UP|  UP |  -  | = |     |
 // |      | CAP |      |     |     | BT2 |        |      | LFT | DWN | RGT | ; |     | 
 // |      |     |      |     |     |BTCLR|        |      | HOME| END | DEL |   |     |     
-//                     | GUI |SHIFT|     |        |      |SPC  | ALT |
+//                     | GUI |SHIFT|     |        |      |SPC  | CTRL |
                         bindings = <
   &trans &trans    &kp C_MUTE &kp C_VOL_DN  &kp C_VOL_UP  &bt BT_SEL 0  &kp C_BRI_DN &kp C_BRI_UP &kp UP   &kp MINUS  &kp EQUAL &trans
   &trans &kp CAPS  &trans     &trans        &trans        &bt BT_SEL 1  &trans       &kp LEFT     &kp DOWN &kp RIGHT  &kp SEMI  &trans 
   &trans &trans    &trans     &trans        &trans        &bt BT_CLR    &trans       &kp HOME     &kp END  &kp DEL    &trans  &trans
-                    	        &kp LGUI      &kp LSHFT     &mo 1         &mo 2        &kp SPACE    &kp RALT
+                    	        &kp LGUI      &kp LSHFT     &mo 1         &mo 2        &kp SPACE    &kp RCTRL
 
                         >;
                 };
