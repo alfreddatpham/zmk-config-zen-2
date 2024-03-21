@@ -50,9 +50,9 @@
 // |      |BTCLR| ALT  |     |     | BT3 |        |      | HOME| END | DEL |   |     |     
 //                     | GUI |SHIFT|     |        |      |SPC  | CTRL |
                         bindings = <
-  &trans &trans    &kp C_MUTE &kp C_VOL_DN  &kp C_VOL_UP  &bt BT_SEL 0  &kp C_BRI_DN &kp C_BRI_UP &kp UP   &kp MINUS  &kp EQUAL &trans
-  &trans &kp CAPS  &trans     &trans        &trans        &bt BT_SEL 1  &trans       &kp LEFT     &kp DOWN &kp RIGHT  &kp SEMI  &trans 
-  &trans BT_CLR    &kp LALT   &trans        &trans        &bt BT_SEL 2  &trans       &kp HOME     &kp END  &kp DEL    &trans  &trans
+  &trans &trans     &kp C_MUTE &kp C_VOL_DN  &kp C_VOL_UP  &bt BT_SEL 0  &kp C_BRI_DN &kp C_BRI_UP &kp UP   &kp MINUS  &kp EQUAL &trans
+  &trans &kp CAPS   &trans     &trans        &trans        &bt BT_SEL 1  &trans       &kp LEFT     &kp DOWN &kp RIGHT  &kp SEMI  &trans 
+  &trans &bt BT_CLR &kp LALT   &trans        &trans        &bt BT_SEL 2  &trans       &kp HOME     &kp END  &kp DEL    &trans  &trans
                     	        &kp LGUI      &kp LSHFT     &mo 1         &mo 2        &kp SPACE    &kp RCTRL
 
                         >;
