@@ -30,9 +30,9 @@
                 lower_layer {
                         label = "NUMBER";
 // -----------------------------------------------------------------------------------------
-// |       |  1  |  2  |  3  |  4  |  5  |        |  6  |  7  |  8  |  9  |  0  |      | 
-// |       | TAB |     |     |  $  |  %  |        |  `  |  [  |  ]  |  '  |  \  |      |
-// |       | ESC | ALT | SPC |BKSP | ENT |        |     |     |     |     |  /  |      |
+// |       |  1  |  2  |  3  |  4  |  5  |        |  6  |  7  |  8   |  9  |  0  |      | 
+// |       | TAB |     |     |  $  |  %  |        |  `  |  [  |  ]   |  '  |  \  |      |
+// |       | ESC | ALT | SPC |BKSP | ENT |        |     |     |      |     |  /  |      |
 //                     | GUI |SHIFT|     |        |     | SPC | CTRL |
                         bindings = <
   &trans  &kp N1    &kp N2    &kp N3     &kp N4    &kp N5        &kp N6     &kp N7     &kp N8     &kp N9   &kp N0    &trans
@@ -45,14 +45,14 @@
                 raise_layer {
                         label = "COMMAND";
 // -----------------------------------------------------------------------------------------
-// |      |     |V_MUTE| V_DN| V_UP| BT1 |        |BR_DN |BR_UP|  UP |  -  | = |     |
-// |      | CAP |      |     |     | BT2 |        |      | LFT | DWN | RGT | ; |     | 
-// |      |BTCLR| ALT  |     |     | BT3 |        |      | HOME| END | DEL |   |     |     
+// |      |BTCLR|V_MUTE| V_DN| V_UP| BT1 |        |BR_DN |BR_UP|  UP  |  -  | = |     |
+// |      | CAP |      |     |     | BT2 |        |      | LFT | DWN  | RGT | ; |     | 
+// |      |     | ALT  |     | BT4 | BT3 |        |      | HOME| END  | DEL |   |     |     
 //                     | GUI |SHIFT|     |        |      |SPC  | CTRL |
                         bindings = <
-  &trans &trans     &kp C_MUTE &kp C_VOL_DN  &kp C_VOL_UP  &bt BT_SEL 0  &kp C_BRI_DN &kp C_BRI_UP &kp UP   &kp MINUS  &kp EQUAL &trans
+  &trans &bt BT_CLR &kp C_MUTE &kp C_VOL_DN  &kp C_VOL_UP  &bt BT_SEL 0  &kp C_BRI_DN &kp C_BRI_UP &kp UP   &kp MINUS  &kp EQUAL &trans
   &trans &kp CAPS   &trans     &trans        &trans        &bt BT_SEL 1  &trans       &kp LEFT     &kp DOWN &kp RIGHT  &kp SEMI  &trans 
-  &trans &bt BT_CLR &kp LALT   &trans        &trans        &bt BT_SEL 2  &trans       &kp HOME     &kp END  &kp DEL    &trans  &trans
+  &trans &trans     &kp LALT   &trans        &bt BT_SEL 3  &bt BT_SEL 2  &trans       &kp HOME     &kp END  &kp DEL    &trans  &trans
                     	        &kp LGUI      &kp LSHFT     &mo 1         &mo 2        &kp SPACE    &kp RCTRL
 
                         >;
